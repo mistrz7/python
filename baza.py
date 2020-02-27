@@ -1,3 +1,5 @@
+#wcześniej konieczny jest import modułu: python -m pip install mysql-connector
+
 import mysql.connector
 
 mydb = mysql.connector.connect(

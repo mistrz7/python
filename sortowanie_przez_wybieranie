@@ -1,0 +1,21 @@
+def najnniejsza(tabela):
+    #od czegos trzeba zaczac
+    szukana=1000000
+    for i in range(len(tabela)):
+        if szukana>tabela[i]:
+            szukana=tabela[i]
+    return szukana;
+
+we=[12,23,33,19,6,79,45,99,2,56,25,67,4,9,7,12,123]
+wy=[]
+
+
+#dla kazdego elementu listy
+for i in range(len(we)):
+
+    #szukam najmniejszej wartosci w tabeli
+    znaleziona=najnniejsza(we)
+    print i, najnniejsza(we)
+
+    #jesli znalazlem ta najmniesza warosc to ja usuwam
+    we.remove(znaleziona)
